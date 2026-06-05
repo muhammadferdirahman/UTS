@@ -34,7 +34,6 @@
     </div>
 
   </header>
-
   <div class="container">
 
     <!-- TENTANG -->
@@ -163,17 +162,50 @@
     </section>
 
     <!-- KONTAK -->
-    <section class="card" id="kontak">
-      <h2>Kontak Saya</h2>
+<section class="card" id="kontak">
+  <h2>Hubungi Saya</h2>
 
-      <form>
-        <input type="text" placeholder="Nama">
-        <input type="email" placeholder="Email">
-        <textarea rows="5" placeholder="Pesan"></textarea>
+  <form>
+    <label for="nama">Nama kamu:</label>
+    <input type="text" id="nama" placeholder="Nama lengkap">
 
-        <button type="submit">Kirim Pesan</button>
-      </form>
-    </section>
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="email@contoh.com">
+
+    <label for="instansi">Instansi / Asal:</label>
+    <input type="text" id="instansi" placeholder="Perusahaan / Universitas / dll">
+
+    <label for="keperluan">Keperluan:</label>
+    <select id="keperluan">
+      <option>-- Pilih --</option>
+      <option>Kerja Sama</option>
+      <option>Konsultasi</option>
+      <option>Pertanyaan</option>
+      <option>Lainnya</option>
+    </select>
+
+    <label>Saya mengenal kamu dari:</label>
+    <div class="radio-group">
+      <label><input type="radio" name="asal"> GitHub</label>
+      <label><input type="radio" name="asal"> Kampus</label>
+      <label><input type="radio" name="asal"> Media Sosial</label>
+      <label><input type="radio" name="asal"> Lainnya</label>
+    </div>
+
+    <label>Bidang yang diminati:</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Web Dev</label>
+      <label><input type="checkbox"> UI/UX</label>
+      <label><input type="checkbox"> Data</label>
+      <label><input type="checkbox"> Lainnya</label>
+    </div>
+
+    <label for="pesan">Pesan:</label>
+    <textarea id="pesan" rows="5" placeholder="Tulis pesan kamu di sini..."></textarea>
+
+    <button type="submit">Kirim Pesan</button>
+  </form>
+</section>
 
   </div>
 
